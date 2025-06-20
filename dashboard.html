@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Customs Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dashboard-page">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <nav>
+      <ul>
+        <li class="active"><a href="#">Dashboard</a></li>
+        <li><a href="#">Filings</a></li>
+        <li><a href="#">Customers</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header class="dashboard-header">
+      <button class="menu-btn">☰</button>
+      <div class="user-info">
+        <span>John Doe (Broker)</span>
+        <a href="index.html" class="logout-btn">Logout</a>
+      </div>
+    </header>
+
+    <!-- Dashboard Content -->
+    <div class="dashboard-content">
+      <h2>Overview</h2>
+      
+      <!-- Summary Cards -->
+      <div class="cards-container">
+        <div class="card">
+          <h3>3 Filings Pending</h3>
+          <p>+2 from yesterday</p>
+        </div>
+        <div class="card">
+          <h3>4 Awaiting Approval</h3>
+          <p>+1 this week</p>
+        </div>
+        <!-- More cards... -->
+      </div>
+
+      <!-- Recent Filings Table -->
+      <div class="recent-filings">
+        <h3>Recent Filings</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Client</th>
+              <th>Status</th>
+              <th>Due Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>CF-1001</td>
+              <td>Acme Inc</td>
+              <td><span class="status-pending">Pending</span></td>
+              <td>May 15</td>
+            </tr>
+            <!-- More rows... -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
